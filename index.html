@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اسام تي - قائمة الطعام</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<div class="leaf" style="left:5%;animation-duration:18s;animation-delay:0s;top:100vh;">🍃</div>
+<div class="leaf" style="left:20%;animation-duration:22s;animation-delay:4s;top:100vh;">🍃</div>
+<div class="leaf" style="left:75%;animation-duration:15s;animation-delay:8s;top:100vh;">🍃</div>
+<div class="leaf" style="left:90%;animation-duration:20s;animation-delay:12s;top:100vh;">🍃</div>
+
+<div class="steam-container">
+  <span class="steam-line"></span>
+  <span class="steam-line"></span>
+  <span class="steam-line"></span>
+</div>
+
+<!-- FAB -->
+<button class="nav-fab" id="navFab" aria-label="فتح القائمة">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+<!-- Overlay -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar" aria-label="التنقل بين الأقسام">
+  <div class="sidebar-top">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-text">
+        <div class="ar">اسام تي</div>
+        <div class="en">Assam Tea</div>
+      </div>
+    </div>
+    <div class="sidebar-label">الأقسام</div>
+  </div>
+
+  <div class="sidebar-nav">
+    <a class="nav-link" data-target="sec-hot">
+      المشروبات الساخنة
+      <span class="nav-icon">☕</span>
+      <span class="nav-arrow">◄</span>
+    </a>
+    <a class="nav-link" data-target="sec-fatayer">
+      الفطاير
+      <span class="nav-icon">🥐</span>
+      <span class="nav-arrow">◄</span>
+    </a>
+    <a class="nav-link" data-target="sec-cold">
+      المشروبات الباردة
+      <span class="nav-icon">🧊</span>
+      <span class="nav-arrow">◄</span>
+    </a>
+    <a class="nav-link" data-target="sec-sides">
+      اصناف جانبية
+      <span class="nav-icon">🫙</span>
+      <span class="nav-arrow">◄</span>
+    </a>
+    <a class="nav-link" data-target="sec-box">
+      بوكس فطاير
+      <span class="nav-icon">📦</span>
+      <span class="nav-arrow">◄</span>
+    </a>
+    <a class="nav-link" data-target="sec-hive">
+      خلية النحل
+      <span class="nav-icon">🍯</span>
+      <span class="nav-arrow">◄</span>
+    </a>
+    <a class="nav-link" data-target="sec-sweets">
+      حلويات اسام
+      <span class="nav-icon">🍰</span>
+      <span class="nav-arrow">◄</span>
+    </a>
+  </div>
+
+  <div class="sidebar-footer">جميع الأسعار بالريال السعودي 🇸🇦</div>
+</nav>
+
+<!-- Main -->
+<div class="page-wrapper">
+  <header>
+    <div class="logo-wrap">
+    
+      <div class="brand-ar">اسام تي</div>
+      <div class="brand-en">Assam Tea</div>
+    </div>
+    <div class="header-divider">
+      <span></span>
+      <div class="diamond"></div>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="menu-grid">
+
+    <div class="section-card" id="sec-hot">
+      <div class="section-header">
+        <h2 class="section-title">المشروبات الساخنة</h2>
+        <span class="section-icon">☕</span>
+      </div>
+      <div class="size-label">صغير · وسط · كبير</div>
+      <div class="items-list">
+        <div class="menu-item"><span class="item-name">شاي اسام</span><span class="item-dots"></span><span class="item-price">6 · 7 · 8</span></div>
+        <div class="menu-item"><span class="item-name">شاي بخار</span><span class="item-dots"></span><span class="item-price">5 · 6 · 7</span></div>
+        <div class="menu-item"><span class="item-name">شاي تلقيمه</span><span class="item-dots"></span><span class="item-price">5 · 6 · 7</span></div>
+        <div class="menu-item"><span class="item-name">شاي اخضر</span><span class="item-dots"></span><span class="item-price">5 · 6 · 7</span></div>
+        <div class="menu-item"><span class="item-name">نعناع</span><span class="item-dots"></span><span class="item-price">5 · 6 · 7</span></div>
+        <div class="menu-item"><span class="item-name">كرك</span><span class="item-dots"></span><span class="item-price">7 · 8 · 9</span></div>
+        <div class="menu-item"><span class="item-name">براد اسام</span><span class="item-dots"></span><span class="item-price">21</span></div>
+        <div class="menu-item"><span class="item-name">براد بخار</span><span class="item-dots"></span><span class="item-price">19</span></div>
+        <div class="menu-item"><span class="item-name">براد تلقيمه</span><span class="item-dots"></span><span class="item-price">19</span></div>
+        <div class="menu-item"><span class="item-name">براد نعناع</span><span class="item-dots"></span><span class="item-price">19</span></div>
+        <div class="menu-item"><span class="item-name">دلة سعودية</span><span class="item-dots"></span><span class="item-price">19</span></div>
+        <div class="menu-item"><span class="item-name">قهوة اليوم</span><span class="item-dots"></span><span class="item-price">7 · 9</span></div>
+        <div class="menu-item"><span class="item-name">قهوة تركي</span><span class="item-dots"></span><span class="item-price">9</span></div>
+      </div>
+    </div>
+
+    <div class="section-card" id="sec-fatayer">
+      <div class="section-header">
+        <h2 class="section-title">الفطاير</h2>
+        <span class="section-icon">🥐</span>
+      </div>
+      <div class="items-list">
+        <div class="menu-item"><span class="item-name">فطيرة دجاج</span><span class="item-dots"></span><span class="item-price">8</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة دجاج بالجبن</span><span class="item-dots"></span><span class="item-price">9</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة التونة</span><span class="item-dots"></span><span class="item-price">8</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة زعتر</span><span class="item-dots"></span><span class="item-price">6</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة البيض بالجبن</span><span class="item-dots"></span><span class="item-price">6</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة جبن سائل</span><span class="item-dots"></span><span class="item-price">5</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة لبنه</span><span class="item-dots"></span><span class="item-price">7</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة لبنه عسل</span><span class="item-dots"></span><span class="item-price">8</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة لبنه زعتر</span><span class="item-dots"></span><span class="item-price">8</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة البيستو</span><span class="item-dots"></span><span class="item-price">10</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة محمرة</span><span class="item-dots"></span><span class="item-price">9</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة المحمرة جبن</span><span class="item-dots"></span><span class="item-price">11</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة السبانخ</span><span class="item-dots"></span><span class="item-price">8</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة الحلوم</span><span class="item-dots"></span><span class="item-price">8</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة العكاوي</span><span class="item-dots"></span><span class="item-price">9</span></div>
+        <div class="menu-item"><span class="item-name">فطيرة القشقوان</span><span class="item-dots"></span><span class="item-price">9</span></div>
+        <div class="menu-item"><span class="item-name">ساندوتش التونة</span><span class="item-dots"></span><span class="item-price">12</span></div>
+        <div class="menu-item"><span class="item-name">ساندوتش الحلوم</span><span class="item-dots"></span><span class="item-price">12</span></div>
+        <div class="menu-item"><span class="item-name">ساندوتش لبنه فول سوداني</span><span class="item-dots"></span><span class="item-price">11</span></div>
+        <div class="menu-item"><span class="item-name">ساندوتش لبنه خضار</span><span class="item-dots"></span><span class="item-price">10</span></div>
+        <div class="menu-item"><span class="item-name">سمبوسه دجاج</span><span class="item-dots"></span><span class="item-price">12</span></div>
+        <div class="menu-item"><span class="item-name">سمبوسه جبن</span><span class="item-dots"></span><span class="item-price">10</span></div>
+      </div>
+    </div>
+
+    <div class="section-card" id="sec-cold">
+      <div class="section-header">
+        <h2 class="section-title">المشروبات الباردة</h2>
+        <span class="section-icon">🧊</span>
+      </div>
+      <div class="size-label">صغير · كبير</div>
+      <div class="items-list">
+        <div class="menu-item"><span class="item-name">ايس كركديه</span><span class="item-dots"></span><span class="item-price">14 · 17</span></div>
+        <div class="menu-item"><span class="item-name">ايس تي خوخ</span><span class="item-dots"></span><span class="item-price">13 · 16</span></div>
+      </div>
+    </div>
+
+    <div class="section-card" id="sec-sides">
+      <div class="section-header">
+        <h2 class="section-title">اصناف جانبية</h2>
+        <span class="section-icon">🫙</span>
+      </div>
+      <div class="items-list">
+        <div class="menu-item"><span class="item-name">عبوة ماء</span><span class="item-dots"></span><span class="item-price">1</span></div>
+        <div class="menu-item"><span class="item-name">مكسرات مشكلة</span><span class="item-dots"></span><span class="item-price">6</span></div>
+        <div class="menu-item"><span class="item-name">مكسرات حارة</span><span class="item-dots"></span><span class="item-price">5</span></div>
+        <div class="menu-item"><span class="item-name">مكسرات باردة</span><span class="item-dots"></span><span class="item-price">5</span></div>
+        <div class="menu-item"><span class="item-name">شابورة</span><span class="item-dots"></span><span class="item-price">2</span></div>
+      </div>
+    </div>
+
+    <div class="section-card" id="sec-box">
+      <div class="section-header">
+        <h2 class="section-title">بوكس فطاير</h2>
+        <span class="section-icon">📦</span>
+      </div>
+      <div class="items-list">
+        <div class="menu-item"><span class="item-name">بوكس فطاير ميني</span><span class="item-dots"></span><span class="item-price">45</span></div>
+      </div>
+    </div>
+
+    <div class="section-card" id="sec-hive">
+      <div class="section-header">
+        <h2 class="section-title">خلية النحل</h2>
+        <span class="section-icon">🍯</span>
+      </div>
+      <div class="items-list">
+        <div class="menu-item"><span class="item-name">خلية نحل بالشيرة</span><span class="item-dots"></span><span class="item-price">10</span></div>
+        <div class="menu-item"><span class="item-name">خلية نحل بالعسل</span><span class="item-dots"></span><span class="item-price">11</span></div>
+        <div class="menu-item"><span class="item-name">خلية نحل بالبيكان</span><span class="item-dots"></span><span class="item-price">11</span></div>
+      </div>
+    </div>
+
+    <div class="section-card" id="sec-sweets">
+      <div class="section-header">
+        <h2 class="section-title">حلويات اسام</h2>
+        <span class="section-icon">🍰</span>
+      </div>
+      <div class="items-list">
+        <div class="menu-item"><span class="item-name">كيكة اسام</span><span class="item-dots"></span><span class="item-price">13</span></div>
+        <div class="menu-item"><span class="item-name">كيكة القرفة بالقهوة</span><span class="item-dots"></span><span class="item-price">14</span></div>
+        <div class="menu-item"><span class="item-name">ام علي</span><span class="item-dots"></span><span class="item-price">14</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p style="margin-top:16px;font-size:0.8rem;color:var(--text-light);">جميع الأسعار بالريال السعودي</p>
+  </footer>
+</div>
+
+<script>
+  const fab = document.getElementById('navFab');
+  const overlay = document.getElementById('sidebarOverlay');
+
+  fab.addEventListener('click', () => document.body.classList.toggle('sidebar-open'));
+  overlay.addEventListener('click', () => document.body.classList.remove('sidebar-open'));
+
+  document.querySelectorAll('.nav-link[data-target]').forEach(link => {
+    link.addEventListener('click', () => {
+      const id = link.getAttribute('data-target');
+      const target = document.getElementById(id);
+      if (!target) return;
+
+      document.body.classList.remove('sidebar-open');
+
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.classList.remove('nav-pulse');
+        void target.offsetWidth;
+        target.classList.add('nav-pulse');
+        setTimeout(() => target.classList.remove('nav-pulse'),70);
+      }, 360);
+
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+
+  // Auto-highlight nav based on scroll
+  const cards = document.querySelectorAll('.section-card[id]');
+  const links = document.querySelectorAll('.nav-link[data-target]');
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('data-target') === entry.target.id));
+      }
+    });
+  }, { threshold: 0.15 });
+
+  cards.forEach(c => io.observe(c));
+</script>
+</body>
+</html>
